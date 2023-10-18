@@ -1,0 +1,49 @@
+.event_div {
+
+    width: 400px;
+    top: 180px;
+    left: 400px;
+    position: absolute;
+    height: 400px;
+}
+
+
+
+.table2 {
+    padding: 10px;
+    position: absolute;
+    left: 20px;
+    background-color: #e6e6fa;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+
+th {
+    padding: 0px;
+    text-align: center;
+    border-bottom: 5px;
+
+  }
+
+  td {
+    padding: 10px;
+    text-align: center;
+
+  
+  }
+
+
+.pheader {
+    color: blueviolet;
+    padding: 0px;
+
+}
+
+.theader{
+    text-align: center;
+    font-family: Helvetica; 
+    color: blueviolet;
+    font-size: 30px;
+}

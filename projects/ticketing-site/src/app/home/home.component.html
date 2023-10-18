@@ -1,0 +1,92 @@
+<!-- <div class="body">
+    <app-tp-header></app-tp-header>
+    <div class="ribbon">
+        <table class="table1">
+            <th class="th1"><button class="button1" (click)="isTabselected($event,0)"> Home</button></th>
+            <th class="th1"><button class="button1" (click)="isTabselected($event,1)">My Orders</button></th>
+            <th class="th1"><button class="button1" (click)="isTabselected($event,2)">Sell Tickets</button></th>
+            <th class="th1"><button class="button1" (click)="logout()" type="button">Logout</button></th>
+        </table>
+    </div>
+  <app-event-card *ngIf="currentTab==0"></app-event-card>
+  <app-myorders *ngIf="currentTab==1"></app-myorders>
+  <app-selltickets *ngIf="currentTab==2"></app-selltickets>
+
+   
+    <app-tp-footer></app-tp-footer>
+</div> -->
+
+<div class="parent">
+<div class="header d-flex justify-content-center align-items-center">
+       
+    <div> <h1><p class="custom_h1">Book My Ticket</p></h1></div>
+</div>
+
+<div class="uname text-right" >
+    Welcome {{userName}} 
+</div>
+
+<div class="logout text-right" >
+    <button class="btn btn-outline-warning" (click)="logout()" type="button">Logout</button>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <tabset #staticFormTabs>
+            <tab heading="Home" id="tab1">
+                <form [formGroup]="purchaseFormGroup" novalidate>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <app-event-card></app-event-card>
+                            <!-- <table class="table table-striped">
+                                <thead>
+                                    <th> Form </th>
+                                    <th> Branch </th>
+                                    <th> Report Name </th>
+                                    <th> Created Date & Time </th>
+                                    <th> Pages </th>
+                                    <th> Lines </th>
+                                    <th>View</th>
+                                    <th>Print</th>
+                                    <th>Download</th>                                
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let report of formReports">
+                                        <td> {{ report.idForm}}</td>
+                                        <td> {{ report.branchId}}</td>
+                                        <td> {{ report.reportName}}</td>
+                                        <td> {{report.createdAt}}</td>
+                                        <td> {{ report.pages}}</td>
+                                        <td> {{ report.noOfLines}}</td>
+                                        <td>
+                                            <a href="javascript:void(0)" (click)="viewReportTest(report)"><i
+                                                    class="bi bi-file-text"></i></a>
+    
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0)" (click)="printReport(report)"><i
+                                                    class="bi bi-printer"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:void(0)" (click)="downloadReport(report)"><i
+                                                    class="bi bi-download"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+    
+                            </table> -->
+                        </div>
+                    </div>
+                </form>
+            </tab>
+            <tab heading="My Purchase History" id="tab2">
+                <app-myorders></app-myorders>
+            </tab>
+            <tab heading="Sell Tickets" id="tab3">
+                <app-selltickets></app-selltickets>
+                
+            </tab>
+        </tabset>
+    </div>
+</div>
+</div>

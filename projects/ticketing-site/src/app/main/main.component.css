@@ -1,0 +1,174 @@
+/* 
+  
+  
+  .card {
+  
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 600px;
+  
+  }
+  
+  .loginScreen {
+    top: 20px;
+    float: left;
+    height: 550px;
+    position: absolute;
+    width: 50%;
+    left: 40px;
+  
+  }
+  
+  .imgs {
+    border-style: solid;
+    position: absolute;
+  }
+  
+  .nloginScreen {
+    top: 20px;
+    float: left;
+    padding: 2px;
+    height: 550px;
+    position: absolute;
+    right: 0;
+    width: 45%;
+  
+  
+  }
+  
+  .tag {
+    padding-top: 100px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: Normal;
+    font-family: Helvetica;
+  
+  
+  }
+  
+  .text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: Normal;
+    font-family: Helvetica;
+  
+  
+  }
+  
+  table {
+    width: 70%;
+    padding: 10px;
+    top: 50px;
+    position: absolute;
+    left: 80px;
+    background-color: #e6e6fa;
+    border-radius: 10px;
+    position: absolute;
+  }
+  
+  th {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 5px;
+  
+  }
+  
+  td {
+    padding: 10px;
+    text-align: center;
+  
+  }
+  
+  button {
+    font-size: 30px;
+    width: 65%;
+    background-color: #800080;
+    color: white;
+    border-radius: 10px;
+  
+  }
+  
+  button:hover {
+    background-color: #301934
+  }
+  
+  .button1 {
+    width: 90%;
+    background-color: #4F7942;
+  }
+  
+  .button1:hover {
+    background-color: #3e8e41
+  }
+  
+  label {
+    font-weight: Normal;
+    font-size: 20px;
+  }
+  
+  input {
+    width: 80%;
+    height: 25px;
+  }
+  
+  
+  .inp {
+    color: #D3D3D3;
+  }
+  
+  .inp1 {
+    background-color: rgb(226, 118, 192);
+  } */
+
+
+
+.card {
+  opacity: 0.8;
+  margin-top: 10px;
+  border: none;
+  width: 500px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(230, 140, 44, 0.507);
+  background: linear-gradient(90deg, rgb(71, 46, 52) 0%, rgb(181, 153, 236) 100%);
+}
+
+.card h1,
+h6 {
+  color: bisque;
+}
+
+label {
+  color: bisque;
+}
+
+
+.btn1 {
+
+  margin-right: 100px;
+
+}
+
+.btn2{
+
+  margin-right: 50px;
+  
+  }
+
+  /* .container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/bmt_bg.jpg);
+    background-size: cover;
+} */
+
+.mainbg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/images/bmt_bg.jpg);
+  background-size: cover;
+}

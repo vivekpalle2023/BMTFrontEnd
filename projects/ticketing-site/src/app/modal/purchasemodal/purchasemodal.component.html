@@ -1,0 +1,57 @@
+<div class="modal-dialog-centered">
+    <div class="modal-content">
+        <form [formGroup]="creditCardGroup" (ngSubmit)="purchaseTickets(creditCardGroup.value)">
+            <div class="modal-header">
+                <h4 class="modal-title pull-left">{{title}} </h4>
+                
+                <!-- <ngx-countdown [config]="{leftTime: 3600}" [format]="'HH:mm:ss'" (event)="handleEvent($event)">
+                    <ng-template #template let-time>{{time.days}}d {{time.hours}}h {{time.minutes}}m {{time.seconds}}s</ng-template>
+                  </ngx-countdown> -->
+                <!-- <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button> -->
+                <h5 class="modal-title">Expire in : {{counter | formatTime}}</h5>   
+                <button type="button" class="btn-close close pull-right" aria-label="Close"
+                    (click)="bsModalRef.hide()"></button>
+            </div>
+            <div class="modal-body">
+
+                <!-- <div class="mb-3">
+                    <label for="noofticket" class="form-label">No Of Tickets</label><span style="color:rgb(236, 35, 35)">*</span>
+                    <input id="noofticket" type="text" class="form-control" formControlName="noofticket">
+                    <div *ngIf="purchaseSubmitted && f['noofticket'].errors" class="invalid-feedback">
+                        <div *ngIf="f['noofticket'].errors.required">Please no. of tickets</div>
+                    </div>
+                </div> -->
+                <div class="mb-3">
+                    <label for="cardNo" class="form-label">Card Number</label><span style="color:rgb(236, 35, 35)">*</span>
+                    <input id="cardNo" type="text" class="form-control" formControlName="cardNo">
+                    <div *ngIf="purchaseSubmitted && f['cardNo'].errors" class="invalid-feedback">
+                        <div *ngIf="f['cardNo'].errors.required">Please enter card number</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">Cvv</label><span style="color:rgb(236, 35, 35)">*</span>
+                    <input id="cvv" type="text" class="form-control" formControlName="cvv">
+                    <div *ngIf="purchaseSubmitted && f['cvv'].errors" class="invalid-feedback">
+                        <div *ngIf="f['cvv'].errors.required">Please enter cvv</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="expdate" class="form-label">Expiry Date</label><span style="color:rgb(236, 35, 35)">*</span>
+                    <input id="expdate" type="text" class="form-control" formControlName="expdate">
+                    <div *ngIf="purchaseSubmitted && f['expdate'].errors" class="invalid-feedback">
+                        <div *ngIf="f['expdate'].errors.required">Please enter expiry date</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-secondary"
+                    (click)="cancelModal(cancelPurchase)">Cancel</button>
+                <button type="submit" class="btn btn-sm btn-primary">Buy</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

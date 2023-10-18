@@ -1,0 +1,52 @@
+<!-- <div>
+    <div class="event_div">
+        <table class="table2">
+            <tr>
+                <td colspan="3"> <label *ngIf="eventdetails.eventname"> Payment Intiated for {{eventdetails.eventname}}</label></td>
+            </tr>
+            <tr><td> <p class="pheader">Event Name</p></td>
+                <td> <p class="pheader">Ticket Price</p></td>
+                <td> </td></tr>
+
+            <tr *ngFor="let tktevent of eventData">
+                <td> {{tktevent.eventName}}</td>
+                <td>{{tktevent.ticketPrice}} </td>
+                <td> <button (click)="BuyTicket($event,tktevent.id,tktevent.event_name,tktevent.Price)">
+                        Buy</button></td>
+            </tr>
+
+        </table>
+    </div>
+    <app-payment [eventdetailsforpayment]="eventdetails" (recieved)="onrecieved($event)"></app-payment>
+</div> -->
+
+
+<div class="row mt-5">
+    <div class="col-12">
+        <table class="table table-bordered centerTable">
+            <thead>
+                <th> Event Id</th>
+                <th> Event Name </th>
+                <th> Available Tickets </th>
+                <th> Price </th>
+                <th> Buy </th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let eventDetail of eventData">
+                    <!-- <td>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"
+                        [(ngModel)]="eventDetail.selected" (change)="onSelectBranch($event, eventDetail)"
+                        value="{{eventDetail.branchId}}" id="flexCheckDefault">
+                </div>
+            </td> -->
+                    <td> {{ eventDetail.eventId}}</td>
+                    <td> {{ eventDetail.eventName}}</td>
+                    <td> {{ eventDetail.noOfTickets}}</td>
+                    <td> {{ eventDetail.ticketPrice}}</td>
+                    <td> <button (click)="openPurchaseModal(eventDetail)">Buy</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

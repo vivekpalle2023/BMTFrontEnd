@@ -1,0 +1,25 @@
+<div class="row mt-5">
+    <div class="col-12">
+        <table class="table table-bordered centerTable">
+            <thead>
+                <th> Purchase Order Id</th>
+                <th> Event Name </th>
+                <th> Status </th>
+                <th> Ticket Price </th>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let myOrder of myOrders">
+                    <td> {{ myOrder.orderId}}</td>
+                    <td> {{ myOrder.eventName}}</td>
+                    <td> {{ myOrder.status}}</td>
+                    <td> {{ myOrder.ticketPrice}}</td>
+                </tr>
+            </tbody>
+
+
+
+        </table>
+    </div>
+
+</div>

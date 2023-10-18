@@ -1,0 +1,171 @@
+<!-- <div>
+    <div class="event_div">
+        <table class="table2">
+
+            <tr>
+                <td colspan="2"> <p class="theader">Selling my Tickets</p></td>
+           
+            </tr> 
+
+            <tr>
+                <td> <p class="pheader">Event Name</p></td>
+                <td> <input type="text"></td>
+            </tr>        
+            <tr>        
+                <td><p class="pheader">Ticket Number</p></td>
+                <td> <input type="text"></td>
+            </tr>
+            <tr>   
+                <td> <p class="pheader">Ticket Price</p></td>
+                <td> <input type="text"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><button>Submit</button></td>
+            </tr>
+         
+        </table>
+    </div>
+    
+</div> -->
+
+
+
+
+
+
+
+    <div class="d-flex justify-content-center">
+        <form [formGroup]="addEventFormGroup" novalidate (ngSubmit)="addEventData(addEventFormGroup.value)">
+            <div class="row form-group mb-3">
+                <div class="mb-3">
+                    <span class="col-sm-2 col-form-label">
+                        <h5>Add New Event</h5>
+                    </span>
+                </div>
+                <div class="mb-3">
+                    <label>Event Name</label><span style="color:rgb(236, 35, 35)">*</span>
+                    <div class="col-3">
+                        <input type="text" id="eventName" class="form-control" formControlName="eventName"
+                            placeholder="Event Name">
+                    </div>
+                    <div *ngIf="formSubmitted && f['eventName'].errors" class="invalid-feedback">
+                        <div *ngIf="f['eventName'].errors.required">Please enter Event Name</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>No. Of Tickets</label><span style="color:rgb(236, 35, 35)">*</span>
+                    <div class="col-3">
+                        <input type="text" id="noOfTickets" class="form-control" formControlName="noOfTickets"
+                            placeholder="Number Of Tickets">
+                    </div>
+                    <div *ngIf="formSubmitted && f['noOfTickets'].errors" class="invalid-feedback">
+                        <div *ngIf="f['noOfTickets'].errors.required">Please enter Price</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>Price</label><span style="color:rgb(236, 35, 35)">*</span>
+                    <div class="col-3">
+                        <input type="text" id="price" class="form-control" formControlName="price"
+                            placeholder="Price">
+                    </div>
+                    <div *ngIf="formSubmitted && f['price'].errors" class="invalid-feedback">
+                        <div *ngIf="f['price'].errors.required">Please enter Price</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-sm btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="event_div">
+
+    <div class="col-12">
+
+        <table class="table table-bordered centerTable">
+
+ 
+
+            <tr>
+
+                <td colspan="2">
+
+                    <p class="theader">Selling my Tickets</p>
+
+                </td>
+
+            </tr>
+
+ 
+
+            <tr>
+
+                <td>
+
+                    <p class="pheader">Event Name</p>
+
+                </td>
+
+                <td> <input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <p class="pheader">Ticket Number</p>
+
+                </td>
+
+                <td> <input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <p class="pheader">Ticket Price</p>
+
+                </td>
+
+                <td> <input type="text"></td>
+
+            </tr>
+
+ 
+
+            <tr>
+
+                <td colspan="2"><button>Submit</button></td>
+
+            </tr>
+
+ 
+
+        </table>
+
+    </div>
+
+ 
+
+</div> -->

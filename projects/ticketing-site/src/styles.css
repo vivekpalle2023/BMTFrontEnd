@@ -1,0 +1,100 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+  /* .text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: Normal;
+    font-family: Helvetica;
+ 
+  
+  
+  }
+
+  .body {
+    background-color: #c4b1c4;
+    border-style: solid;
+    border-radius: 10px;
+    height: 950px;
+    width: 100%;
+    border: inset #525050;
+    border-style: solid;
+  }
+
+  .table2 {
+  
+    position: absolute;
+    left: 20px;
+    background-color: #e6e6fa;
+    border-radius: 10px;
+    position: absolute;
+} */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+.invalid-feedback {
+    display: block !important;
+}
+
+.header {
+    background-color: rgb(19, 15, 15); 
+    font-family:serif;
+    min-height: 80px;
+}
+
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: rgb(221, 215, 228);
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-style: groove;
+}
+
+.border-gradient-purple {
+   border-image-source: linear-gradient(to left, rgb(116, 58, 213), rgb(213, 58, 157));
+}
+
+/* table > thead > th {
+  background-color: rgba(215, 194, 236, 0.454);
+  height: 25px;
+  padding: 10px;
+}
+
+table > tbody > tr {
+  height: 25px;
+  padding: 10px;
+} */
+
+.pagination {
+  margin-bottom : 0;
+}
+
+.gradient-custom {
+  background: #667eea;
+  background: -webkit-linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
+  background: linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))
+}
+
+.custom_h1 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(rgba(224, 218, 161, 0.819), rgba(166, 132, 172, 0.916));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(245, 245, 245, 0.923); */
+}
+  
+.uname {
+  position: absolute;
+  top: 24px;
+  right: 100px;
+  font-size: larger;
+  color: rgb(253, 254, 254);
+}

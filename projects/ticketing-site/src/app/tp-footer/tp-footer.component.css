@@ -1,0 +1,14 @@
+.footer{
+    position: absolute;
+    top: 900px;
+    border-top: inset #ffcccb;
+    width: 95%;
+    
+    }
+
+    .p1{
+        font-size: 12px;
+        text-align: center;
+        font-weight: Normal;
+        font-family:Helvetica;
+        }

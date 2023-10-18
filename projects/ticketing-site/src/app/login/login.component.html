@@ -1,0 +1,35 @@
+<html>
+
+<body style="background-color:rgba(180, 238, 238, 0.17);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="text-center">
+                        <h1>Login to BookMyTicket</h1>
+                        <h6>Please enter Username & password !</h6>
+                    </div>
+
+                    <form [formGroup]="loginForm" (ngSubmit)="handleLogin()"  #f="ngForm" novalidate>
+                        <div class="mb-3">
+                          <label for="username" class="form-label">Username</label>
+                          <input formControlName = "username" type="text" class="form-control" id="username" placeholder="Enter Username">
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input formControlName = "password" type="password" class="form-control" id="password" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <div *ngIf="f.submitted && isLoginFailed" class="alert alert-danger" role="alert">
+                              Login failed: {{ error }}
+                            </div>
+                          </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
